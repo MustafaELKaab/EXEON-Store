@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-exeon-bg text-exeon-text font-sans leading-relaxed overflow-x-hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-pixel text-exeon-primary leading-tight font-normal;
+  }
+  h1 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+  h2 {
+    @apply text-xl md:text-2xl lg:text-3xl mb-8 text-center;
+    text-shadow: 2px 2px rgba(170, 0, 255, 0.7);
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-6 py-3 font-pixel text-xs md:text-sm uppercase cursor-pointer transition-all duration-300 border-2 border-transparent text-center;
+  }
+  .btn-primary {
+    @apply bg-exeon-bg text-exeon-primary border-exeon-primary;
+    box-shadow: 0 0 10px rgba(170, 0, 255, 0.7);
+  }
+  .btn-primary:hover {
+    @apply bg-exeon-primary text-black transform -translate-y-1;
+    box-shadow: 0 0 20px rgba(170, 0, 255, 0.7);
+  }
+  .btn-outline {
+    @apply bg-transparent border-exeon-muted text-exeon-muted;
+  }
+  .btn-outline:hover {
+    @apply border-exeon-primary text-exeon-primary;
+    box-shadow: 0 0 10px rgba(170, 0, 255, 0.7);
+  }
+  .glass {
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid var(--tw-colors-exeon-primary);
+    box-shadow: 0 4px 15px rgba(170, 0, 255, 0.2);
+  }
+}
