@@ -13,7 +13,7 @@ function Home() {
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: 'url("/assets/images/hero.png")',
+            backgroundImage: 'url("assets/images/hero.png")',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-transparent"></div>
